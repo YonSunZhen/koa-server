@@ -12,9 +12,11 @@ const users = require('./routes/users')
 // error handler
 onerror(app)
 
+
+
 // middlewares
 app.use(bodyparser({
-  enableTypes:['json', 'form', 'text']
+  enableTypes: ['json', 'form', 'text']
 }))
 app.use(json())
 app.use(logger())
