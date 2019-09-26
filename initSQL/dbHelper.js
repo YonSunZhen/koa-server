@@ -1,5 +1,8 @@
+/**
+ * 连接数据库
+ */
 const mysql = require('mysql');
-const mariadb = require('./mariadb.conf');
+const mariadb = require('../config/mariadb.conf');
 
 /**
  * getMariadbConf主要用来返回一个对象(配置sql连接信息)
