@@ -20,9 +20,9 @@ connect();
 
 function exeScript (sqlType, sql, params) {
   return new Promise((resolve, reject) => {
-    pool.query(sql, params, (error, result) => {
+    pool.query(sql, params, (error, results) => {
       if (error) {
-        logger.error(sqlType + ': ' + error);
+        // logger.error(sqlType + ': ' + error);
         reject(error);
       }
       resolve(results);

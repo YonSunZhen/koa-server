@@ -1,0 +1,1 @@
+exports.koaCors = require('./koa-cors');

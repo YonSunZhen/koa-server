@@ -3,6 +3,6 @@ exports.getMariadbConf = () => {
     host: 'localhost',
     user: 'root',
     password: 'root',
-    database: 'koa-server'
+    database: 'koa_server'
   }
 }
