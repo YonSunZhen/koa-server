@@ -11,11 +11,7 @@ const URL = require('url');
  * 5、通过 Access-Control-Allow-Methods 设置需要支持的跨域请求方法
  */
 module.exports = async function (ctx, next) {
-  // ctx.get('origin')在哪来的
   const origin = URL.parse(ctx.get('origin') || ctx.get('referer') || '');
-  console.log(11111111111);
-  console.log(ctx);
-  
   if (origin.protocol && origin.host) {
     ctx.set('Access-Control-Allow-Origin', `${origin.protocol}//${origin.host}`);
     ctx.set('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE, PUT');
