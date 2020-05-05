@@ -1,0 +1,12 @@
+{
+  "tectre": {
+    "db": {
+      "host": "10.219.107.80",
+      "port": 31306,
+      "user": "root",
+      "password": "",
+      "database": "storage"
+    }
+  },
+  "upstream": {}
+}

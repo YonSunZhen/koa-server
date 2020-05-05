@@ -1,0 +1,12 @@
+{
+  "name": "API 文档",
+  "version": "1.0.0",
+  "title": "API",
+  "url": "http://10.219.107.250/hololens/api/v1/storage",
+  "sampleUrl": "http://10.219.107.250/hololens/api/v1/storage",
+  "forceLanguage": "zh-cn",
+  "template": {
+    "withCompare": true,
+    "withGenerator": true
+  }
+}
