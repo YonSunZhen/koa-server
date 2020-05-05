@@ -9,7 +9,11 @@ async function login(ctx) {
   
   userBll.getUserInfoByUserName(username, password).then((res) => {
     console.log(res);
+    
   });
+  return ctx.body = {
+    status: "success"
+  }
   
   
 }

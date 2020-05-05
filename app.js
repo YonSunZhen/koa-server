@@ -1,10 +1,11 @@
 const Koa = require('koa');
 const app = new Koa();
 const views = require('koa-views');
-const json = require('koa-json');
-const onerror = require('koa-onerror');
-const bodyparser = require('koa-bodyparser');
-const logger = require('koa-logger');
+const json = require('koa-json'); // 输出json格式
+const onerror = require('koa-onerror'); // 监控错误
+const bodyparser = require('koa-bodyparser'); // body解析器
+const logger = require('koa-logger'); // 打印每一次接口请求响应时间
+
 
 const index = require('./routes/index');
 const users = require('./routes/users');
@@ -16,13 +17,12 @@ const {
 // error handler
 onerror(app);
 
-
 // middlewares
 app.use(bodyparser({
-  enableTypes: ['json', 'form', 'text']
-}))
+  enableTypes: ['json', 'form', 'text'] // body解析器解析的类型(解析http请求的的数据)
+})) 
 app.use(koaCors); // 跨域
-app.use(json())
+app.use(json());
 app.use(logger());
 app.use(require('koa-static')(__dirname + '/public'))
 
