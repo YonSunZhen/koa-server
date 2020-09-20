@@ -1,8 +1,8 @@
 {
   "tectre": {
     "db": {
-      "host": "10.219.107.80",
-      "port": 31306,
+      "host": "xx.xxx.xxx.xxx",
+      "port": 3306,
       "user": "root",
       "password": "",
       "database": "test"

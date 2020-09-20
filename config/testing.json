@@ -1,10 +1,10 @@
 {
   "service": {
-    "port": 8087
+    "port": 8081
   },
   "tectre": {
     "db": {
-      "host": "10.219.107.250",
+      "host": "xx.xxx.xxx.xxx",
       "port": 3306,
       "user": "root",
       "password": "",
