@@ -2,9 +2,9 @@ FROM 10.219.107.15:8888/node:10
 
 MAINTAINER "Qin Jianqing" "jianqing.qin@desay-svautomotive.com"
 
-ADD . /storage/
+ADD . /test/
 
-WORKDIR /storage
+WORKDIR /test
 
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 

@@ -1,5 +1,5 @@
 import { Service, ResponseUtils, logger } from '@service-fw';
-import { router, errorMessages } from './storage';
+import { router, errorMessages } from './test';
 import config from 'config';
 
 const _svc_conf = config.get<{ name: string; port: number }>('service');

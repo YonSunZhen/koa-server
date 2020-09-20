@@ -1,4 +1,4 @@
-import { storage_logger } from '../logger/storage-logger';
+import { test_logger } from '../logger/test-logger';
 import * as common from './common';
 import * as crypto from 'crypto';
 
@@ -35,7 +35,7 @@ class DHCrypto {
 
   generateSecretKey(_cPubResultN: number): string {
     if (!_cPubResultN) {
-      storage_logger.info('error: _cPubResultN is must be number.');
+      test_logger.info('error: _cPubResultN is must be number.');
       return '';
     }
     let sKeyN = _cPubResultN * this.sPrivN % this.modN;
