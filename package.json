@@ -14,8 +14,8 @@
     "copy-static": "ts-node copyStatic.ts",
     "rm-dist": "ts-node rm-dist.ts",
     "apidoc": "apidoc -i ./src -o ./doc/dist -c ./doc",
-    "lint": "eslint src test --ext .ts",
-    "lint:fix": "eslint src test --ext .ts --fix"
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
   },
   "husky": {
     "hooks": {
