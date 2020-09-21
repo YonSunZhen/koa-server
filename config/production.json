@@ -1,5 +1,5 @@
 {
-  "tectre": {
+  "test": {
     "db": {
       "host": "xx.xxx.xxx.xxx",
       "port": 3306,

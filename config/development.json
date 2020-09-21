@@ -2,7 +2,7 @@
   "service": {
     "port": 8081
   },
-  "tectre": {
+  "test": {
     "db": {
       "host": "localhost",
       "port": 3306,
