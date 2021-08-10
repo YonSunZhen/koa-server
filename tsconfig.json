@@ -11,9 +11,9 @@
     "strict": false,
     "esModuleInterop": true,
     "paths": {
-      "@service-fw": [
-        "./src/service-fw"
-      ]
+      "@service-fw": [ "./src/service-fw" ],
+      "@dao": [ "./src/dao" ],
+      "@common": [ "./src/common"]
     }
   },
   "include": [

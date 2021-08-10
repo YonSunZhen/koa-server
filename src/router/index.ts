@@ -1,6 +1,6 @@
 import Router from 'koa-router';
 
-import test_router from './test/test-router';
+import test_router from './demo/demo-router';
 
 const router = new Router();
 

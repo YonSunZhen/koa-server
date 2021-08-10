@@ -1,7 +1,8 @@
 import { Service, ResponseUtils, logger } from '@service-fw';
-import { router, errorMessages } from './test';
+import { router } from './router';
+import { errorMessages } from '@common';
 import config from 'config';
-import { initDb } from './test/dao';
+import { initDb } from '@dao';
 
 const _svc_conf = config.get<{ name: string; port: number }>('service');
 const _logger = logger(_svc_conf.name);

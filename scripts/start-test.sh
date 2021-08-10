@@ -31,6 +31,6 @@ echo "copy apidoc to ${APIDOC_SERVER_PATH}"
 echo '---- 启动项目 ----'
 
 # DB_PASSWORD: 数据库密码
-PORT=8085 DB_PASSWORD=xxx npm run start:test
+export NODE_CONFIG={"db":{"password":"root"}} npm run start:test
 
 # ------------------------------------------------------

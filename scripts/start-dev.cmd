@@ -4,5 +4,5 @@ set PORT=8085
 set DB_PASSWORD=xxxx
 npm run start:dev
 
-set NODE_CONFIG={"test":{"db":{"password":"root"}}}
+set NODE_CONFIG={"db":{"password":"root"}}
 npm run start:dev
